@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <title>Appointment Page</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+  <body>
+    <header>
+        <h1>Welcome to Plasma4Health!</h1>
+    </header>
+
+    <div class="mainarea"> <!-- this has the background -->
+        <h2>Take an appointment</h2>
+        <form id="appointment-form">
+            <div>
+              <label for="Donor Center ID">Select Donor Center ID:</label>
+              <select type="donorcenter" id="myDropdown">
+                <option value="San Francisco">San Francisco - 657689</option>
+                <option value="Los Angeles">Los Angeles - 895678</option>
+                <option value="New York">New York - 342789</option>
+              </select>
+            </div>
+            <div>
+              <label for="Day of Appointment">Select Day of Appointment:</label>
+              <select id="myDropdown">
+                <option value="July 7th 2023">July 7th 2023</option>
+                <option value="July 8th 2023">July 8th 2023</option>
+                <option value="July 9th 2023">July 9th 2023</option>
+              </select>
+            </div>
+            <div>
+              <label for="Hour of Appointment">Select Hour of Appointment:</label>
+              <select id="myDropdown">
+                <option value="9 am to 10 am">9 am to 10 am</option>
+                <option value="1 pm to 2 pm">1 pm to 2 pm</option>
+                <option value="4 pm to 5 pm">4 pm to 5 pm</option>
+              </select>
+            </div>
+            <script>
+            var dropdown = document.getElementById("myDropdown");
+            dropdown.addEventListener("change", function() {
+              var selectedOption = dropdown.options[dropdown.selectedIndex].value;
+              console.log(selectedOption);
+            });
+            </script>
+            <div>
+            <button type="button" onclick="location.href='bookappointment.html'">Book Appointment</button>
+            </div>
+        </form>
+    </div>
+    <div class="menu">
+      <button type="buttonmenu" onclick="location.href='main.html'" class="button1"></button>
+      <button type="buttonmenu" onclick="location.href='appointment.html'" class="button2"></button>
+      <button type="buttonmenu" onclick="location.href='userprofile.html'" class="button3"></button>
+  </div>
+    <footer>
+            <p>“Creativity is the new currency, so, are you credited with new thoughts or overdrawn in old thinking?”</p>
+            <p>― Onyi Anyado</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <title>Register Page</title>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Plasma4Health!</h1>
+    </header>
+
+    <div class="mainarea">
+      <!-- this has the background -->
+      <h2>Create an account</h2>
+      <form id="register-form">
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+          <label for="confirm-password">Confirm Password:</label>
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+            required
+          />
+        </div>
+        <div>
+          <button type="button" onclick="location.href='master.html'">
+            Register
+          </button>
+        </div>
+      </form>
+    </div>
+    <div class="menu">
+      <button
+        type="buttonmenu"
+        onclick="location.href='appointment.html'"
+        class="button1"
+      ></button>
+      <button
+        type="buttonmenu"
+        onclick="location.href='main.html'"
+        class="button2"
+      ></button>
+      <button
+        type="buttonmenu"
+        onclick="location.href='userprofile.html'"
+        class="button3"
+      ></button>
+    </div>
+    <footer>
+      <p>
+        “Creativity is the new currency, so, are you credited with new thoughts
+        or overdrawn in old thinking?”
+      </p>
+      <p>― Onyi Anyado</p>
+    </footer>
+  </body>
+</html>
